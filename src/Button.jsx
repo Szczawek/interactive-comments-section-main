@@ -7,7 +7,7 @@ export default function Button({ openFunc,   person, replies, openEditArea, pare
     return (
       <button className="clr-blue" onClick={() => openFunc()}>
         <img
-          src="src/images/icon-reply.svg"
+          src="/images/icon-reply.svg"
           alt="Icon used to respond to comments"
         />
         Reply
@@ -22,14 +22,14 @@ export default function Button({ openFunc,   person, replies, openEditArea, pare
           className="clr-red"
           onClick={() => funct["changeAlert"](repliesId, replies, parent)}>
           <img
-            src="src/images/icon-delete.svg"
+            src="/images/icon-delete.svg"
             alt="icon of the delete button"
           />
           Delete
         </button>
         <button className="clr-blue " onClick={() => openEditArea()}>
           <img
-            src="src/images/icon-edit.svg"
+            src="/images/icon-edit.svg"
             alt="An icon to edit your comment"
           />
           Edit

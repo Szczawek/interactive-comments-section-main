@@ -1,15 +1,13 @@
 import { useState, createContext, useEffect } from "react";
 import Container from "./ContainerComment";
 import OpenWindow from "./UploadComment";
+import com from "./data.json"
 import Alert from "./Alert";
 if (!localStorage.getItem("obj")) {
-  fetch("src/data.json")
-    .then((e) => e.json())
-    .then((e) => localStorage.setItem("obj", JSON.stringify(e["comments"])));
+localStorage.setItem("obj", JSON.stringify(com["comments"]));
 }
 const AppFunc = createContext();
 export default function App() {
-  // zwolnić na końcu
   const [comments, setComments] = useState(
     JSON.parse(localStorage.getItem("obj"))
   );

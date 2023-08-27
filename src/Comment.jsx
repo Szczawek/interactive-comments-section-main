@@ -63,11 +63,11 @@ export default function Comment({ obj, parent, type, replies, repliesId }) {
       <div className="comment">
         <div className="counter">
           <button onClick={() => increasing()}>
-            <img src="src/images/icon-plus.svg" />
+            <img src="/images/icon-plus.svg" />
           </button>
           <p>{count}</p>
           <button onClick={() => decreasing()}>
-            <img src="src/images/icon-minus.svg" />
+            <img src="/images/icon-minus.svg" />
           </button>
         </div>
         <div className="comment-information">

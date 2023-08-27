@@ -12,7 +12,7 @@ export default function OpenWindow({ btnName, type, place, closeWindow, id }) {
     score: 0,
     user: {
       image: {
-        png: "src/images/avatars/image-juliusomo.png",
+        png: "/images/avatars/image-juliusomo.png",
       },
       username: "juliusomo",
     },
@@ -21,7 +21,7 @@ export default function OpenWindow({ btnName, type, place, closeWindow, id }) {
   return (
     <div className="open-window">
       <img
-        src="src\images\avatars\image-juliusomo.png"
+        src="/images/avatars/image-juliusomo.png"
         alt="User's current profile picture"
       />
       <textarea
